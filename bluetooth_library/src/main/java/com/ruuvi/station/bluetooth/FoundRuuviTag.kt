@@ -15,4 +15,5 @@ class FoundRuuviTag {
     var txPower: Double? = null
     var movementCounter: Int? = null
     var measurementSequenceNumber: Int? = null
+    var connectable: Boolean? = null
 }

@@ -1,5 +1,7 @@
 package com.ruuvi.station.bluetooth
 
+import java.util.*
+
 interface IRuuviTagScanner {
 
     fun startScanning(foundListener: OnTagFoundListener)
@@ -7,6 +9,8 @@ interface IRuuviTagScanner {
     fun stopScanning()
 
     fun canScan(): Boolean
+
+    fun connect(macAddress: String, readLogsFrom: Date?, listener: IRuuviGattListener): Boolean
 
     interface OnTagFoundListener {
 
