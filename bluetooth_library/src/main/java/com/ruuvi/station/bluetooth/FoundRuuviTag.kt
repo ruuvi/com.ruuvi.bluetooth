@@ -16,4 +16,5 @@ class FoundRuuviTag {
     var movementCounter: Int? = null
     var measurementSequenceNumber: Int? = null
     var connectable: Boolean? = null
+    var rawData: Array<Byte>? = null
 }
