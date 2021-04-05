@@ -30,7 +30,6 @@ interface IRuuviRangeNotifier {
     fun enableScheduledScans(areScheduledScansEnabled: Boolean)
 
     interface OnTagsFoundListener {
-
         fun onTagsFound(allTags: List<FoundRuuviTag>)
     }
 }

@@ -29,6 +29,14 @@ interface IRuuviTagScanner {
      */
     fun connect(macAddress: String, readLogsFrom: Date?, listener: IRuuviGattListener): Boolean
 
+    /**
+     * Disconnect from GATT device
+     *
+     * @param macAddress MAC of target
+     * @return true if connection exists and disconnect was called
+     */
+    fun disconnect(macAddress: String): Boolean
+
     interface OnTagFoundListener {
         fun onTagFound(tag: FoundRuuviTag)
     }
