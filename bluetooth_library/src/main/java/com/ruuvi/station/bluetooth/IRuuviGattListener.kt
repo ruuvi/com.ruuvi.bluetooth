@@ -6,4 +6,5 @@ interface IRuuviGattListener {
     fun dataReady(data: List<LogReading>)
     fun heartbeat(raw: String)
     fun syncProgress(syncedDataPoints: Int)
+    fun error(errorMessage: String)
 }
