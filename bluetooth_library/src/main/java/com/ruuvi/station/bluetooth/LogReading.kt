@@ -6,9 +6,9 @@ data class LogReading (
     var date: Date = Date(),
     var id: String = "",
     var type: GattReadingType = GattReadingType.ALL,
-    var humidity: Double = 0.0,
+    var humidity: Double? = null,
     var temperature: Double = 0.0,
-    var pressure: Double = 0.0,
+    var pressure: Double? = null
 )
 
 enum class GattReadingType {
