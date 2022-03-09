@@ -29,6 +29,8 @@ interface IRuuviTagScanner {
      */
     fun connect(macAddress: String, readLogsFrom: Date?, listener: IRuuviGattListener): Boolean
 
+    fun getFwVersion(macAddress: String, listener: IRuuviGattListener): Boolean
+
     /**
      * Disconnect from GATT device
      *
