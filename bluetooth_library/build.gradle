@@ -2,16 +2,16 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion '30.0.3'
 
     namespace 'com.ruuvi.station.bluetooth'
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 30
-        versionCode 10405
-        versionName "1.4.5"
+        targetSdkVersion 31
+        versionCode 10406
+        versionName "1.4.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
